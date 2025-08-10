@@ -29,7 +29,8 @@ export const memberType = defineType({
       type: 'slug',
       options: {
         source: 'name'
-      }
+      },
+      validation: (rule) => rule.required()
     }),
     defineField({
       name: 'image',

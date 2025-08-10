@@ -24,6 +24,11 @@ export const configType = defineType({
     defineField({
       name: 'logo',
       type: 'image',
+    }),
+    defineField({
+      name: 'instagram',
+      title: "Instagram @ (do not add @)",
+      type: 'string',
     })
   ]
 })

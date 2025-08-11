@@ -47,10 +47,18 @@ export const eventType = defineType({
       validation: (rule) => rule.required().max(800),
     }),
     defineField({
+      name: 'locationName',
+      title: "Nom de l'établissement"
+      ,type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'location',
+      title: "Renseigne le lieu sur google map",
       type: 'geopoint',
       validation: (rule) => rule.required(),
     }),
+
     defineField({
       name: 'helloasso',
       title: "Link to Hello Asso",
